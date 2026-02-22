@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes borderAnimate {
+    from {
+        --rotate: 0deg;
+    }
+
+    to {
+        --rotate: 360deg;
+    }
+}
+
+.box {
+    max-width: 300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    background:
+        linear-gradient(black) padding-box,
+        conic-gradient(from var(--rotate), black, rgb(255, 0, 0), black) border-box;
+    border: 0px solid rgba(255, 255, 255, 0);
+    animation: borderAnimate 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-play-state: paused;
+    text-shadow: 0 0 0px rgb(255, 0, 0);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 50px rgb(255, 0, 0);
+    color: rgb(254, 0, 0);
+    text-shadow: 0 0 10px rgb(230, 7, 7);
+}
+
+.box img {
+    width: 100%;
+}

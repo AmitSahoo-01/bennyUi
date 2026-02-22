@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    anchor-name: --some-anchor;
+}
+
+.box {
+    margin-top: 50px;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    /* align-self: flex-start; */
+    border: 2px solid white;
+}
+
+.box:hover{
+    anchor-name: --some-anchor;
+}
+
+.red{
+    background-color: rgba(234, 234, 234, 0);
+}
+.blue{
+    background-color: rgba(254, 254, 254, 0);
+}   
+.green{
+    background-color: rgba(253, 253, 253, 0);
+}
+
+
+.anchor{
+    background: white;
+    background-image: url(virat.jpg);
+    background-size: cover;
+    z-index: 2;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    top:anchor(top);
+    left:anchor(left);
+    bottom: anchor(bottom);
+    right:anchor(right);
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;
+}

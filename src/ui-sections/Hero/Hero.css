@@ -1,0 +1,95 @@
+.hero-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--secondary-text);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.hero-badges {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero-badge {
+  border: 1px solid var(--primary);
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+.hero-cta {
+  margin-top: 40px;
+}
+
+.browse-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--primary);
+  color: var(--bg);
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.browse-button:hover {
+  background: var(--bg);
+  color: var(--primary);
+  scale: 1.05;
+}
+
+.hero-animation {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}

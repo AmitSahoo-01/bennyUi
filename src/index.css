@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+ 
+:root {
+  --primary: #000;
+  --bg: #fff;
+  --text: #111;
+  --border: #eee;
+  --card-bg: #fff;
+  --nav-bg: #fff;
+  --secondary-text: #666;
+  --code-bg: #1a1a1a;
+}
+
+[data-theme="dark"] {
+  --primary: #fff;
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --border: #30363d;
+  --card-bg: #161b22;
+  --nav-bg: #010409;
+  --secondary-text: #8b949e;
+  --code-bg: #0d1117;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Hover effects for cards handled in CSS for simpler hover states */
+.component-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08) !important;
+  border-color: var(--primary) !important;
+}
+
+
+/* Prism Overrides */
+pre[class*="language-"] {
+  background: #1a1a1a !important;
+  text-shadow: none !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 14px !important;
+}
+code[class*="language-"], pre[class*="language-"] {
+  color: #ccc !important; 
+}

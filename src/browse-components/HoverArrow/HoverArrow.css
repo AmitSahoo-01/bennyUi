@@ -1,0 +1,44 @@
+body {
+  background: #0b1020;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-hover {
+  cursor: pointer;
+}
+
+/* static arrow always there */
+.arrow-static {
+  stroke: #5eead4;
+  stroke-width: 4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.35;
+}
+
+/* animated layer (hidden line) */
+.arrow-animated {
+  stroke: #5eead4;
+  stroke-width: 4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+}
+
+/* hover = draw animation over static arrow */
+.arrow-hover:hover .arrow-animated {
+  animation: drawArrow 1.2s ease-out forwards;
+}
+
+@keyframes drawArrow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

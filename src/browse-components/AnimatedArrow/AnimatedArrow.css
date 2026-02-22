@@ -1,0 +1,37 @@
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* arrow style */
+.arrow-path {
+  stroke: rgb(166, 22, 22);
+  stroke-width: 4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  /* animation trick */
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawArrow 1.6s ease-in-out infinite;
+}
+
+/* draw animation */
+@keyframes drawArrow {
+  0% {
+    stroke-dashoffset: 200;
+    opacity: 1;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}

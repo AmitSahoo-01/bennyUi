@@ -1,0 +1,63 @@
+// npm i gsap in terminal for using this component
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import "./CustomCardCursor.css";
+
+const CustomCardCursor = () => {
+  const cursorRef = useRef(null);
+  const mainRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const main = mainRef.current;
+    const image = imageRef.current;
+
+    const moveCursor = (e) => {
+      gsap.to(cursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.4
+      });
+    };
+
+    const enterImage = () => {
+      gsap.to(cursor, {
+        scale: 3,
+        opacity: 0.4
+      });
+    };
+
+    const leaveImage = () => {
+      gsap.to(cursor, {
+        scale: 1,
+        opacity: 1
+      });
+    };
+
+    main.addEventListener("mousemove", moveCursor);
+    image.addEventListener("mouseenter", enterImage);
+    image.addEventListener("mouseleave", leaveImage);
+
+    return () => {
+      main.removeEventListener("mousemove", moveCursor);
+      image.removeEventListener("mouseenter", enterImage);
+      image.removeEventListener("mouseleave", leaveImage);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="cursor" ref={cursorRef}></div>
+
+      <main ref={mainRef}>
+        <div className="imageDiv" ref={imageRef}>
+          <div className="overlayer"></div>
+          <img src="https://images.unsplash.com/photo-1765466441202-76252154d4fc?w=600" />
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default CustomCardCursor;

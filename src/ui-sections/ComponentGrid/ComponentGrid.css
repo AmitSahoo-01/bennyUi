@@ -1,0 +1,116 @@
+.component-grid-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.component-grid-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 5.95rem;
+  color: var(--text);
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+
+.highlight-text{
+  color: var(--primary);
+  background-color: var(--card-bg);
+  padding: 8px 12px;
+  box-shadow: 0 4px 8px rgba(48, 48, 123, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.highlight-text:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.usage{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.component-card-link {
+  text-decoration: none;
+}
+
+.component-card {
+  border: 3px solid var(--border);
+  border-radius: 20px;
+  background: var(--card-bg);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* Enhanced default shadow effect - more prominent */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 
+              0 3px 8px rgba(0, 0, 0, 0.1),
+              0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.component-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18),
+              0 8px 16px rgba(0, 0, 0, 0.14),
+              0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+  border-width: 3px;
+}
+
+/* Preview Image Section */
+.component-preview-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--border);
+}
+
+.component-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.component-card:hover .component-preview-image img {
+  transform: scale(1.05);
+}
+
+/* Component Info Section */
+.component-info {
+  flex: 1;
+  padding: 24px;
+}
+
+.component-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.component-description {
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

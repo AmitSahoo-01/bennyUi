@@ -1,0 +1,42 @@
+body {
+  background: #0b1020;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hover {
+  cursor: pointer;
+}
+
+/* common home style */
+.home {
+  fill: none;
+  stroke: #5eead4;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* static layer */
+.static {
+  opacity: 0.35;
+}
+
+/* animated layer (hidden stroke) */
+.animated {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+/* hover trigger */
+.home-hover:hover .animated {
+  animation: drawHome 1.2s ease-out forwards;
+}
+
+@keyframes drawHome {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

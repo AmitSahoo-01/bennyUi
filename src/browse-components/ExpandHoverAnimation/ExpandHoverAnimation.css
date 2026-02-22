@@ -1,0 +1,46 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+/* Main Container */
+.expand-panels {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Panel Base */
+.panel {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+  border-radius: 12px;
+}
+
+/* Hover Animation */
+.panel:hover {
+  cursor: pointer;
+  flex-grow: 3;
+}
+
+/* Panel Colors */
+.green { background: green; }
+.yellow { background: yellow; }
+.purple { background: purple; }
+.orange { background: orange; }
+.pink { background: pink; }
