@@ -1118,7 +1118,7 @@ body {
   },{
     name:"AnimatedPage",
     description: "A Animated Page use your in your website or portfolio to look different.",  
-    previewImage: "/images/AnimatedPage.png", // Add preview image later
+    previewImage: "/images/AnimatedPage.jpg", // Add preview image later
     files:{
         "AnimatedPage.html":`<!-- you can add any image in the anchor div and it will follow the mouse pointer. -->
         <!DOCTYPE html>
