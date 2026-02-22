@@ -142,7 +142,7 @@ Then add the HTML structure to your page.
   {
     name: "ExpandHoverAnimation",
     description: "An interactive animation where panels expand on hover and others shrink, creating a smooth and modern UI effect.",
-    previewImage: "/src/browse-components/ExpandHoverAnimation/preview.png", // Add preview image later
+    previewImage: "/images/ExpandHoverAnimation.png", // Add preview image later
     files: {
       "ExpandHoverAnimation.html": `<!DOCTYPE html>
 <html lang="en">
@@ -239,7 +239,7 @@ Then add the HTML structure to your page.
   {
     name: "RadialBackground",
     description: "A Dark Horizon Glow background which you can use any where like Home section background,element background etc.",
-    previewImage: "/src/browse-components/RadialBackground/preview.png", // Add preview image later
+    previewImage: "/images/RadialBackground.png", // Add preview image later
     files: {
       "RadialBackground.html": `<!DOCTYPE html>
 <html lang="en">
@@ -303,7 +303,7 @@ body {
   {
     name: "CardHover",
     description: "A Customizable Card Hover Effect with Image and Badge.",  
-    previewImage: "/src/browse-components/CardHover/preview.png", // Add preview image later
+    previewImage: "/images/CardHover.png", // Add preview image later
     files: {
       "CardHover.html": `<!DOCTYPE html>
 <html lang="en">
@@ -378,7 +378,7 @@ img{
   },{
     name: "RadialText",
     description: "A Customizable Radial Text.",  
-    previewImage: "/src/browse-components/RadialText/preview.png", // Add preview image later
+    previewImage: "/images/RadialText.png", // Add preview image later
     files: {
       "RadialText.html": `<!DOCTYPE html>
 <html lang="en">
@@ -423,7 +423,7 @@ h1{
   },{
     name: "CustomCardCursor",
     description: "NOTE-NOW we are Working on react components so dom elemets are not shown in the live preview But you can use it in your system as custom cursor. A Customizable Card Cursor.",  
-    previewImage: "/src/browse-components/CustomCardCursor/preview.png", // Add preview image later
+    previewImage: "/images/CustomCardCursor.png", // Add preview image later
     files: {
       "CustomCardCursor.html": `NOW we are Working on react components so dom elemets are not shown in the live preview But you can use it in your system as custom cursor.
       <!-- You should have to use gsap cdn for this project. You can find it on the official gsap website or use a CDN service like jsDelivr or cdnjs. Here is an example of how to include the gsap library in your HTML file using a CDN: -->
@@ -534,7 +534,7 @@ imageDiv.addEventListener("mouseleave",function(dets){
   },{
     name: "TextAnimation",
     description: "A Animation Text coming from down side.",  
-    previewImage: "/src/browse-components/TextAnimation/preview.png", // Add preview image later
+    previewImage: "/images/TextAnimation.png", // Add preview image later
     files: {
       "TextAnimation.html": `<!DOCTYPE html>
 <html lang="en">
@@ -613,7 +613,7 @@ h1 span {
   },{
     name:"AnimatedArrow",
     description: "A Animated Arrow use as Animating component in your website.",  
-    previewImage: "/src/browse-components/AnimatedArrow/preview.png", // Add preview image later
+    previewImage: "/images/AnimatedArrow.png", // Add preview image later
     files:{
         "AnimatedArrow.html":`<!DOCTYPE html>
 <html lang="en">
@@ -684,7 +684,7 @@ h1 span {
   },{
     name:"HomeIcon",
     description: "A Animated Home icon use as Animating Icon in your website.",  
-    previewImage: "/src/browse-components/HomeIcon/preview.png", // Add preview image later
+    previewImage: "/images/HomeIcon.png", // Add preview image later
     files:{
         "HomeIcon.html":`<!DOCTYPE html>
 <html lang="en">
@@ -767,7 +767,7 @@ h1 span {
   },{
     name:"HoverArrow",
     description: "A Animated Arrow icon use as Animating Icon in your website.",  
-    previewImage: "/src/browse-components/HoverArrow/preview.png", // Add preview image later
+    previewImage: "/images/HoverArrow.png", // Add preview image later
     files:{
         "HoverArrow.html":`<!DOCTYPE html>
 <html lang="en">
@@ -854,7 +854,7 @@ h1 span {
   },{
     name:"HoverMenuBar",
     description: "A Animated Menubar icon use as Animating Icon in your website.",  
-    previewImage: "/src/browse-components/HoverMenuBar/preview.png", // Add preview image later
+    previewImage: "/images/HoverMenuBar.png", // Add preview image later
     files:{
         "HoverMenuBar.html":`<!DOCTYPE html>
 <html lang="en">
@@ -934,7 +934,7 @@ h1 span {
   },{
     name:"AnimatedSendArrow",
     description: "A Animated SendArrow icon use as Animating Icon in your website.",  
-    previewImage: "/src/browse-components/AnimatedSendArrow/preview.png", // Add preview image later
+    previewImage: "/images/AnimatedSendArrow.png", // Add preview image later
     files:{
         "AnimatedSendArrow.html":`<!DOCTYPE html>
 <html lang="en">
@@ -1017,7 +1017,7 @@ h1 span {
   },{
     name:"AnimatedCard",
     description: "A Animated Card use your in your page to look different.",  
-    previewImage: "/src/browse-components/AnimatedCard/preview.png", // Add preview image later
+    previewImage: "/images/AnimatedCard.png", // Add preview image later
     files:{
         "AnimatedCard.html":`<!DOCTYPE html>
 <html lang="en">
@@ -1118,7 +1118,7 @@ body {
   },{
     name:"AnimatedPage",
     description: "A Animated Page use your in your website or portfolio to look different.",  
-    previewImage: "/src/browse-components/AnimatedPage/preview.png", // Add preview image later
+    previewImage: "/images/AnimatedPage.png", // Add preview image later
     files:{
         "AnimatedPage.html":`<!-- you can add any image in the anchor div and it will follow the mouse pointer. -->
         <!DOCTYPE html>
