@@ -5,13 +5,17 @@
 }
 
 .component-grid-title {
-  font-size: 3.2rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-bottom: 5.95rem;
   color: var(--text);
+  /* color: rgba(0, 0, 0, 0.977); */
   text-align: center;
   letter-spacing: 0.5px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+    background-clip: text;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+
 }
 
 .highlight-text{

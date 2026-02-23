@@ -13,7 +13,7 @@ export default function ComponentGrid() {
                 <h3 className="highlight-text">Ready Made Components</h3>
             </div>
 
-            <h2 className="component-grid-title">Components</h2>
+            <h2 className="component-grid-title">COMPONENTS</h2>
 
             <div className="component-grid">
                 {components.map((component) => (

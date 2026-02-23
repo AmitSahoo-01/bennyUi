@@ -16,9 +16,12 @@ export default function Hero() {
                         Download as a mini-package and drop into your project.
                     </p>
 
+                    <h2>Designed for developers, built for designers.</h2>
+
                     <div className="hero-badges">
                         <div className="hero-badge">100% Free</div>
                         <div className="hero-badge">Live Preview</div>
+                        <div className="hero-badge">Fresh UI Elements Daily</div>
                     </div>
 
                     <div className="hero-cta">
@@ -26,6 +29,13 @@ export default function Hero() {
                             BROWSE COMPONENTS
                         </a>
                     </div>
+
+                    {/* <div className="hero-cta">
+                        <h4  className="browse-button">
+                            Fresh UI Elements Daily
+                        </h4>
+                    </div> */}
+
                 </div>
 
                 {/* Right Column: Animation Video */}
